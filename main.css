@@ -1,0 +1,55 @@
+@import url('./custom-input-file.css');
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+ -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	height: 100%;
+}
+
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+
+ul,li {
+	list-style: none;
+}
+
+
+a {
+	text-decoration:none;
+	color: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.preview--photo {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+.preview--photo img {
+	width: 100%;
+	height: 100%;
+}
+
+.preview--photo img[src=""] {
+	display: none;
+}

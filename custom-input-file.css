@@ -1,0 +1,45 @@
+.custom-input-file {
+	max-width: 200px;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	border-radius: 5px;
+	transition: 0.2s 0s ease-in;
+	
+	@media (hover: hover) {
+		&:hover {
+			background-color: #acacac;
+			border-radius: 20px;
+		}
+
+		&:hover label{
+			color: #ffffff;
+		}
+	}
+}
+
+.custom-input-file input {
+	opacity: 0;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.custom-input-file label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 120%;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	transition: 0.2s 0s ease-in;
+}
